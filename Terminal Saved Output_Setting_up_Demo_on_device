@@ -1,0 +1,979 @@
+Last login: Wed Apr 11 22:40:59 on ttys001
+davids-mbp:albums dmiller$ cd .
+davids-mbp:albums dmiller$ cd ..
+davids-mbp:dev dmiller$ cd ..
+davids-mbp:Udemy_ReactNative dmiller$ ls
+ReactNative_Class_Notes_042018.md	dev
+davids-mbp:Udemy_ReactNative dmiller$ git init
+Initialized empty Git repository in /Users/dmiller/Google Drive/School/Udemy_ReactNative/.git/
+davids-mbp:Udemy_ReactNative dmiller$ git add .
+davids-mbp:Udemy_ReactNative dmiller$ git commit -m "First commit"
+[master (root-commit) 1061016] First commit
+ Committer: David Miller <dmiller@davids-mbp.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 54 files changed, 13800 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 ReactNative_Class_Notes_042018.md
+ create mode 100644 dev/albums/.babelrc
+ create mode 100644 dev/albums/.buckconfig
+ create mode 100644 dev/albums/.eslintrc
+ create mode 100644 dev/albums/.flowconfig
+ create mode 100644 dev/albums/.gitattributes
+ create mode 100644 dev/albums/.gitignore
+ create mode 100644 dev/albums/.watchmanconfig
+ create mode 100644 dev/albums/App.js
+ create mode 100644 dev/albums/android/app/BUCK
+ create mode 100644 dev/albums/android/app/build.gradle
+ create mode 100644 dev/albums/android/app/proguard-rules.pro
+ create mode 100644 dev/albums/android/app/src/main/AndroidManifest.xml
+ create mode 100644 dev/albums/android/app/src/main/java/com/albums/MainActivity.java
+ create mode 100644 dev/albums/android/app/src/main/java/com/albums/MainApplication.java
+ create mode 100644 dev/albums/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+ create mode 100644 dev/albums/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+ create mode 100644 dev/albums/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ create mode 100644 dev/albums/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ create mode 100644 dev/albums/android/app/src/main/res/values/strings.xml
+ create mode 100644 dev/albums/android/app/src/main/res/values/styles.xml
+ create mode 100644 dev/albums/android/build.gradle
+ create mode 100644 dev/albums/android/gradle.properties
+ create mode 100644 dev/albums/android/gradle/wrapper/gradle-wrapper.jar
+ create mode 100644 dev/albums/android/gradle/wrapper/gradle-wrapper.properties
+ create mode 100755 dev/albums/android/gradlew
+ create mode 100644 dev/albums/android/gradlew.bat
+ create mode 100644 dev/albums/android/keystores/BUCK
+ create mode 100644 dev/albums/android/keystores/debug.keystore.properties
+ create mode 100644 dev/albums/android/settings.gradle
+ create mode 100644 dev/albums/app.json
+ create mode 100644 dev/albums/index.js
+ create mode 100644 dev/albums/ios/albums-tvOS/Info.plist
+ create mode 100644 dev/albums/ios/albums-tvOSTests/Info.plist
+ create mode 100644 dev/albums/ios/albums.xcodeproj/project.pbxproj
+ create mode 100644 dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums-tvOS.xcscheme
+ create mode 100644 dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums.xcscheme
+ create mode 100644 dev/albums/ios/albums/AppDelegate.h
+ create mode 100644 dev/albums/ios/albums/AppDelegate.m
+ create mode 100644 dev/albums/ios/albums/Base.lproj/LaunchScreen.xib
+ create mode 100644 dev/albums/ios/albums/Images.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 dev/albums/ios/albums/Images.xcassets/Contents.json
+ create mode 100644 dev/albums/ios/albums/Info.plist
+ create mode 100644 dev/albums/ios/albums/main.m
+ create mode 100644 dev/albums/ios/albumsTests/Info.plist
+ create mode 100644 dev/albums/ios/albumsTests/albumsTests.m
+ create mode 100644 dev/albums/package-lock.json
+ create mode 100644 dev/albums/package.json
+ create mode 100644 dev/albums/src/components/AlbumDetail.js
+ create mode 100644 dev/albums/src/components/AlbumList.js
+ create mode 100644 dev/albums/src/components/Header.js
+ create mode 100644 dev/albums/src/old/AlbumList.js
+ create mode 100644 dev/albums/src/old/AlbumList_Functional_Component.js
+davids-mbp:Udemy_ReactNative dmiller$ git remote add origin https://github.com/idrmiller/react-native-app-1.git
+davids-mbp:Udemy_ReactNative dmiller$ git remote -v
+origin	https://github.com/idrmiller/react-native-app-1.git (fetch)
+origin	https://github.com/idrmiller/react-native-app-1.git (push)
+davids-mbp:Udemy_ReactNative dmiller$ git push -u origin master
+To https://github.com/idrmiller/react-native-app-1.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/idrmiller/react-native-app-1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+davids-mbp:Udemy_ReactNative dmiller$ git pull
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/idrmiller/react-native-app-1
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+davids-mbp:Udemy_ReactNative dmiller$ git status
+On branch master
+nothing to commit, working tree clean
+davids-mbp:Udemy_ReactNative dmiller$ git remote -v
+origin	https://github.com/idrmiller/react-native-app-1.git (fetch)
+origin	https://github.com/idrmiller/react-native-app-1.git (push)
+davids-mbp:Udemy_ReactNative dmiller$ git fetch https://github.com/idrmiller/react-native-app-1.git
+From https://github.com/idrmiller/react-native-app-1
+ * branch            HEAD       -> FETCH_HEAD
+davids-mbp:Udemy_ReactNative dmiller$ git merge https://github.com/idrmiller/react-native-app-1.git
+merge: https://github.com/idrmiller/react-native-app-1.git - not something we can merge
+davids-mbp:Udemy_ReactNative dmiller$ git pull https://github.com/idrmiller/react-native-app-1.git origin
+fatal: Couldn't find remote ref origin
+davids-mbp:Udemy_ReactNative dmiller$ git pull https://github.com/idrmiller/react-native-app-1.git master
+From https://github.com/idrmiller/react-native-app-1
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+davids-mbp:Udemy_ReactNative dmiller$ git reset --hard HEAD^
+fatal: ambiguous argument 'HEAD^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+davids-mbp:Udemy_ReactNative dmiller$ git reset --hard HEAD
+HEAD is now at 1061016 First commit
+davids-mbp:Udemy_ReactNative dmiller$ git pull https://github.com/idrmiller/react-native-app-1.git master
+From https://github.com/idrmiller/react-native-app-1
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+davids-mbp:Udemy_ReactNative dmiller$ git status
+On branch master
+nothing to commit, working tree clean
+davids-mbp:Udemy_ReactNative dmiller$ git remote
+origin
+davids-mbp:Udemy_ReactNative dmiller$ git clone https://github.com/idrmiller/react-native-app-1.git
+Cloning into 'react-native-app-1'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+davids-mbp:Udemy_ReactNative dmiller$ git remote
+origin
+davids-mbp:Udemy_ReactNative dmiller$ ls
+react-native-app-1
+davids-mbp:Udemy_ReactNative dmiller$ git remote remove origin
+davids-mbp:Udemy_ReactNative dmiller$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .DS_Store
+	deleted:    ReactNative_Class_Notes_042018.md
+	deleted:    dev/albums/.babelrc
+	deleted:    dev/albums/.buckconfig
+	deleted:    dev/albums/.eslintrc
+	deleted:    dev/albums/.flowconfig
+	deleted:    dev/albums/.gitattributes
+	deleted:    dev/albums/.gitignore
+	deleted:    dev/albums/.watchmanconfig
+	deleted:    dev/albums/App.js
+	deleted:    dev/albums/android/app/BUCK
+	deleted:    dev/albums/android/app/build.gradle
+	deleted:    dev/albums/android/app/proguard-rules.pro
+	deleted:    dev/albums/android/app/src/main/AndroidManifest.xml
+	deleted:    dev/albums/android/app/src/main/java/com/albums/MainActivity.java
+	deleted:    dev/albums/android/app/src/main/java/com/albums/MainApplication.java
+	deleted:    dev/albums/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+	deleted:    dev/albums/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+	deleted:    dev/albums/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+	deleted:    dev/albums/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+	deleted:    dev/albums/android/app/src/main/res/values/strings.xml
+	deleted:    dev/albums/android/app/src/main/res/values/styles.xml
+	deleted:    dev/albums/android/build.gradle
+	deleted:    dev/albums/android/gradle.properties
+	deleted:    dev/albums/android/gradle/wrapper/gradle-wrapper.jar
+	deleted:    dev/albums/android/gradle/wrapper/gradle-wrapper.properties
+	deleted:    dev/albums/android/gradlew
+	deleted:    dev/albums/android/gradlew.bat
+	deleted:    dev/albums/android/keystores/BUCK
+	deleted:    dev/albums/android/keystores/debug.keystore.properties
+	deleted:    dev/albums/android/settings.gradle
+	deleted:    dev/albums/app.json
+	deleted:    dev/albums/index.js
+	deleted:    dev/albums/ios/albums-tvOS/Info.plist
+	deleted:    dev/albums/ios/albums-tvOSTests/Info.plist
+	deleted:    dev/albums/ios/albums.xcodeproj/project.pbxproj
+	deleted:    dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums-tvOS.xcscheme
+	deleted:    dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums.xcscheme
+	deleted:    dev/albums/ios/albums/AppDelegate.h
+	deleted:    dev/albums/ios/albums/AppDelegate.m
+	deleted:    dev/albums/ios/albums/Base.lproj/LaunchScreen.xib
+	deleted:    dev/albums/ios/albums/Images.xcassets/AppIcon.appiconset/Contents.json
+	deleted:    dev/albums/ios/albums/Images.xcassets/Contents.json
+	deleted:    dev/albums/ios/albums/Info.plist
+	deleted:    dev/albums/ios/albums/main.m
+	deleted:    dev/albums/ios/albumsTests/Info.plist
+	deleted:    dev/albums/ios/albumsTests/albumsTests.m
+	deleted:    dev/albums/package-lock.json
+	deleted:    dev/albums/package.json
+	deleted:    dev/albums/src/components/AlbumDetail.js
+	deleted:    dev/albums/src/components/AlbumList.js
+	deleted:    dev/albums/src/components/Header.js
+	deleted:    dev/albums/src/old/AlbumList.js
+	deleted:    dev/albums/src/old/AlbumList_Functional_Component.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	react-native-app-1/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+davids-mbp:Udemy_ReactNative dmiller$ ls
+react-native-app-1
+davids-mbp:Udemy_ReactNative dmiller$ cd react-native-app-1/
+davids-mbp:react-native-app-1 dmiller$ ls
+README.md				dev
+ReactNative_Class_Notes_042018.md
+davids-mbp:react-native-app-1 dmiller$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	ReactNative_Class_Notes_042018.md
+	dev/
+
+nothing added to commit but untracked files present (use "git add" to track)
+davids-mbp:react-native-app-1 dmiller$ git commit -m "First Commit"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	.DS_Store
+	ReactNative_Class_Notes_042018.md
+	dev/
+
+nothing added to commit but untracked files present
+davids-mbp:react-native-app-1 dmiller$ git add .
+davids-mbp:react-native-app-1 dmiller$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .DS_Store
+	new file:   ReactNative_Class_Notes_042018.md
+	new file:   dev/albums/.babelrc
+	new file:   dev/albums/.buckconfig
+	new file:   dev/albums/.eslintrc
+	new file:   dev/albums/.flowconfig
+	new file:   dev/albums/.gitattributes
+	new file:   dev/albums/.gitignore
+	new file:   dev/albums/.watchmanconfig
+	new file:   dev/albums/App.js
+	new file:   dev/albums/android/app/BUCK
+	new file:   dev/albums/android/app/build.gradle
+	new file:   dev/albums/android/app/proguard-rules.pro
+	new file:   dev/albums/android/app/src/main/AndroidManifest.xml
+	new file:   dev/albums/android/app/src/main/java/com/albums/MainActivity.java
+	new file:   dev/albums/android/app/src/main/java/com/albums/MainApplication.java
+	new file:   dev/albums/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+	new file:   dev/albums/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+	new file:   dev/albums/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+	new file:   dev/albums/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+	new file:   dev/albums/android/app/src/main/res/values/strings.xml
+	new file:   dev/albums/android/app/src/main/res/values/styles.xml
+	new file:   dev/albums/android/build.gradle
+	new file:   dev/albums/android/gradle.properties
+	new file:   dev/albums/android/gradle/wrapper/gradle-wrapper.jar
+	new file:   dev/albums/android/gradle/wrapper/gradle-wrapper.properties
+	new file:   dev/albums/android/gradlew
+	new file:   dev/albums/android/gradlew.bat
+	new file:   dev/albums/android/keystores/BUCK
+	new file:   dev/albums/android/keystores/debug.keystore.properties
+	new file:   dev/albums/android/settings.gradle
+	new file:   dev/albums/app.json
+	new file:   dev/albums/index.js
+	new file:   dev/albums/ios/albums-tvOS/Info.plist
+	new file:   dev/albums/ios/albums-tvOSTests/Info.plist
+	new file:   dev/albums/ios/albums.xcodeproj/project.pbxproj
+	new file:   dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums-tvOS.xcscheme
+	new file:   dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums.xcscheme
+	new file:   dev/albums/ios/albums/AppDelegate.h
+	new file:   dev/albums/ios/albums/AppDelegate.m
+	new file:   dev/albums/ios/albums/Base.lproj/LaunchScreen.xib
+	new file:   dev/albums/ios/albums/Images.xcassets/AppIcon.appiconset/Contents.json
+	new file:   dev/albums/ios/albums/Images.xcassets/Contents.json
+	new file:   dev/albums/ios/albums/Info.plist
+	new file:   dev/albums/ios/albums/main.m
+	new file:   dev/albums/ios/albumsTests/Info.plist
+	new file:   dev/albums/ios/albumsTests/albumsTests.m
+	new file:   dev/albums/package-lock.json
+	new file:   dev/albums/package.json
+	new file:   dev/albums/src/components/AlbumDetail.js
+	new file:   dev/albums/src/components/AlbumList.js
+	new file:   dev/albums/src/components/Header.js
+	new file:   dev/albums/src/old/AlbumList.js
+	new file:   dev/albums/src/old/AlbumList_Functional_Component.js
+
+davids-mbp:react-native-app-1 dmiller$ git commit -m "First Commit"
+[master 48e5fed] First Commit
+ Committer: David Miller <dmiller@davids-mbp.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 54 files changed, 13800 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 ReactNative_Class_Notes_042018.md
+ create mode 100644 dev/albums/.babelrc
+ create mode 100644 dev/albums/.buckconfig
+ create mode 100644 dev/albums/.eslintrc
+ create mode 100644 dev/albums/.flowconfig
+ create mode 100644 dev/albums/.gitattributes
+ create mode 100644 dev/albums/.gitignore
+ create mode 100644 dev/albums/.watchmanconfig
+ create mode 100644 dev/albums/App.js
+ create mode 100644 dev/albums/android/app/BUCK
+ create mode 100644 dev/albums/android/app/build.gradle
+ create mode 100644 dev/albums/android/app/proguard-rules.pro
+ create mode 100644 dev/albums/android/app/src/main/AndroidManifest.xml
+ create mode 100644 dev/albums/android/app/src/main/java/com/albums/MainActivity.java
+ create mode 100644 dev/albums/android/app/src/main/java/com/albums/MainApplication.java
+ create mode 100644 dev/albums/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+ create mode 100644 dev/albums/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+ create mode 100644 dev/albums/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ create mode 100644 dev/albums/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ create mode 100644 dev/albums/android/app/src/main/res/values/strings.xml
+ create mode 100644 dev/albums/android/app/src/main/res/values/styles.xml
+ create mode 100644 dev/albums/android/build.gradle
+ create mode 100644 dev/albums/android/gradle.properties
+ create mode 100644 dev/albums/android/gradle/wrapper/gradle-wrapper.jar
+ create mode 100644 dev/albums/android/gradle/wrapper/gradle-wrapper.properties
+ create mode 100755 dev/albums/android/gradlew
+ create mode 100644 dev/albums/android/gradlew.bat
+ create mode 100644 dev/albums/android/keystores/BUCK
+ create mode 100644 dev/albums/android/keystores/debug.keystore.properties
+ create mode 100644 dev/albums/android/settings.gradle
+ create mode 100644 dev/albums/app.json
+ create mode 100644 dev/albums/index.js
+ create mode 100644 dev/albums/ios/albums-tvOS/Info.plist
+ create mode 100644 dev/albums/ios/albums-tvOSTests/Info.plist
+ create mode 100644 dev/albums/ios/albums.xcodeproj/project.pbxproj
+ create mode 100644 dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums-tvOS.xcscheme
+ create mode 100644 dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums.xcscheme
+ create mode 100644 dev/albums/ios/albums/AppDelegate.h
+ create mode 100644 dev/albums/ios/albums/AppDelegate.m
+ create mode 100644 dev/albums/ios/albums/Base.lproj/LaunchScreen.xib
+ create mode 100644 dev/albums/ios/albums/Images.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 dev/albums/ios/albums/Images.xcassets/Contents.json
+ create mode 100644 dev/albums/ios/albums/Info.plist
+ create mode 100644 dev/albums/ios/albums/main.m
+ create mode 100644 dev/albums/ios/albumsTests/Info.plist
+ create mode 100644 dev/albums/ios/albumsTests/albumsTests.m
+ create mode 100644 dev/albums/package-lock.json
+ create mode 100644 dev/albums/package.json
+ create mode 100644 dev/albums/src/components/AlbumDetail.js
+ create mode 100644 dev/albums/src/components/AlbumList.js
+ create mode 100644 dev/albums/src/components/Header.js
+ create mode 100644 dev/albums/src/old/AlbumList.js
+ create mode 100644 dev/albums/src/old/AlbumList_Functional_Component.js
+davids-mbp:react-native-app-1 dmiller$ git push
+Counting objects: 87, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (67/67), done.
+Writing objects: 100% (87/87), 171.48 KiB | 5.36 MiB/s, done.
+Total 87 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/idrmiller/react-native-app-1.git
+   28ee426..48e5fed  master -> master
+davids-mbp:react-native-app-1 dmiller$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+davids-mbp:react-native-app-1 dmiller$ git add .
+davids-mbp:react-native-app-1 dmiller$ git commit -m "Udpate to notes"
+[master c9968a0] Udpate to notes
+ Committer: David Miller <dmiller@davids-mbp.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 14 insertions(+), 14 deletions(-)
+davids-mbp:react-native-app-1 dmiller$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+davids-mbp:react-native-app-1 dmiller$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 383 bytes | 383.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/idrmiller/react-native-app-1.git
+   48e5fed..c9968a0  master -> master
+davids-mbp:react-native-app-1 dmiller$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ReactNative_Class_Notes_042018.md
+	modified:   dev/albums/src/components/AlbumDetail.js
+	modified:   dev/albums/src/components/AlbumList.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	dev/albums/src/components/Card.js
+	dev/albums/src/components/CardSection.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+davids-mbp:react-native-app-1 dmiller$ ls
+README.md				dev
+ReactNative_Class_Notes_042018.md
+davids-mbp:react-native-app-1 dmiller$ cd ..
+davids-mbp:Udemy_ReactNative dmiller$ ls
+react-native-app-1
+davids-mbp:Udemy_ReactNative dmiller$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .DS_Store
+	deleted:    ReactNative_Class_Notes_042018.md
+	deleted:    dev/albums/.babelrc
+	deleted:    dev/albums/.buckconfig
+	deleted:    dev/albums/.eslintrc
+	deleted:    dev/albums/.flowconfig
+	deleted:    dev/albums/.gitattributes
+	deleted:    dev/albums/.gitignore
+	deleted:    dev/albums/.watchmanconfig
+	deleted:    dev/albums/App.js
+	deleted:    dev/albums/android/app/BUCK
+	deleted:    dev/albums/android/app/build.gradle
+	deleted:    dev/albums/android/app/proguard-rules.pro
+	deleted:    dev/albums/android/app/src/main/AndroidManifest.xml
+	deleted:    dev/albums/android/app/src/main/java/com/albums/MainActivity.java
+	deleted:    dev/albums/android/app/src/main/java/com/albums/MainApplication.java
+	deleted:    dev/albums/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+	deleted:    dev/albums/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+	deleted:    dev/albums/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+	deleted:    dev/albums/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+	deleted:    dev/albums/android/app/src/main/res/values/strings.xml
+	deleted:    dev/albums/android/app/src/main/res/values/styles.xml
+	deleted:    dev/albums/android/build.gradle
+	deleted:    dev/albums/android/gradle.properties
+	deleted:    dev/albums/android/gradle/wrapper/gradle-wrapper.jar
+	deleted:    dev/albums/android/gradle/wrapper/gradle-wrapper.properties
+	deleted:    dev/albums/android/gradlew
+	deleted:    dev/albums/android/gradlew.bat
+	deleted:    dev/albums/android/keystores/BUCK
+	deleted:    dev/albums/android/keystores/debug.keystore.properties
+	deleted:    dev/albums/android/settings.gradle
+	deleted:    dev/albums/app.json
+	deleted:    dev/albums/index.js
+	deleted:    dev/albums/ios/albums-tvOS/Info.plist
+	deleted:    dev/albums/ios/albums-tvOSTests/Info.plist
+	deleted:    dev/albums/ios/albums.xcodeproj/project.pbxproj
+	deleted:    dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums-tvOS.xcscheme
+	deleted:    dev/albums/ios/albums.xcodeproj/xcshareddata/xcschemes/albums.xcscheme
+	deleted:    dev/albums/ios/albums/AppDelegate.h
+	deleted:    dev/albums/ios/albums/AppDelegate.m
+	deleted:    dev/albums/ios/albums/Base.lproj/LaunchScreen.xib
+	deleted:    dev/albums/ios/albums/Images.xcassets/AppIcon.appiconset/Contents.json
+	deleted:    dev/albums/ios/albums/Images.xcassets/Contents.json
+	deleted:    dev/albums/ios/albums/Info.plist
+	deleted:    dev/albums/ios/albums/main.m
+	deleted:    dev/albums/ios/albumsTests/Info.plist
+	deleted:    dev/albums/ios/albumsTests/albumsTests.m
+	deleted:    dev/albums/package-lock.json
+	deleted:    dev/albums/package.json
+	deleted:    dev/albums/src/components/AlbumDetail.js
+	deleted:    dev/albums/src/components/AlbumList.js
+	deleted:    dev/albums/src/components/Header.js
+	deleted:    dev/albums/src/old/AlbumList.js
+	deleted:    dev/albums/src/old/AlbumList_Functional_Component.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	react-native-app-1/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+davids-mbp:Udemy_ReactNative dmiller$ ls
+react-native-app-1
+davids-mbp:Udemy_ReactNative dmiller$ cd react-native-app-1/
+davids-mbp:react-native-app-1 dmiller$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ReactNative_Class_Notes_042018.md
+	modified:   dev/albums/src/components/AlbumDetail.js
+	modified:   dev/albums/src/components/AlbumList.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	dev/albums/src/components/Card.js
+	dev/albums/src/components/CardSection.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+davids-mbp:react-native-app-1 dmiller$ git add .
+davids-mbp:react-native-app-1 dmiller$ git commit -m "Completed module 8 of training"
+[master 39d1bc6] Completed module 8 of training
+ Committer: David Miller <dmiller@davids-mbp.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 93 insertions(+), 4 deletions(-)
+ create mode 100644 dev/albums/src/components/Card.js
+ create mode 100644 dev/albums/src/components/CardSection.js
+davids-mbp:react-native-app-1 dmiller$ git push
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 1.86 KiB | 951.00 KiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/idrmiller/react-native-app-1.git
+   c9968a0..39d1bc6  master -> master
+davids-mbp:react-native-app-1 dmiller$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ReactNative_Class_Notes_042018.md
+	modified:   dev/albums/index.js
+	modified:   dev/albums/src/components/AlbumDetail.js
+	modified:   dev/albums/src/components/CardSection.js
+	modified:   dev/albums/src/components/Header.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+davids-mbp:react-native-app-1 dmiller$ git add .
+davids-mbp:react-native-app-1 dmiller$ git commit -m "Udemy Section 8 #43"
+[master 7a7ba2f] Udemy Section 8 #43
+ Committer: David Miller <dmiller@davids-mbp.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 8 insertions(+), 5 deletions(-)
+davids-mbp:react-native-app-1 dmiller$ 
+davids-mbp:react-native-app-1 dmiller$ git config --global user.email idrmiller360@gmail.com
+davids-mbp:react-native-app-1 dmiller$ git config --global user.name "David"
+davids-mbp:react-native-app-1 dmiller$ git push
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 1.20 KiB | 1.20 MiB/s, done.
+Total 11 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+To https://github.com/idrmiller/react-native-app-1.git
+   39d1bc6..7a7ba2f  master -> master
+davids-mbp:react-native-app-1 dmiller$ cd ..
+davids-mbp:Udemy_ReactNative dmiller$ git clone https://github.com/idrmiller/react-native-app-2.git
+Cloning into 'react-native-app-2'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+davids-mbp:Udemy_ReactNative dmiller$ ls
+react-native-app-1	react-native-app-2
+davids-mbp:Udemy_ReactNative dmiller$ cd react-native-app-2
+davids-mbp:react-native-app-2 dmiller$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+davids-mbp:react-native-app-2 dmiller$ sudo npm install -g create-react-native-app
+Password:
+/usr/local/bin/create-react-native-app -> /usr/local/lib/node_modules/create-react-native-app/build/index.js
++ create-react-native-app@1.0.0
+added 28 packages in 6.182s
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 5.8.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+davids-mbp:react-native-app-2 dmiller$ npm i -g npm
+/usr/local/bin/npm -> /usr/local/lib/node_modules/npm/bin/npm-cli.js
+/usr/local/bin/npx -> /usr/local/lib/node_modules/npm/bin/npx-cli.js
++ npm@5.8.0
+added 89 packages, removed 42 packages and updated 67 packages in 26.802s
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 5.8.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+davids-mbp:react-native-app-2 dmiller$ npm status
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, bin, bugs, c, cache, ci, completion,
+    config, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, get, help, help-search, i, init, install,
+    install-test, it, link, list, ln, login, logout, ls,
+    outdated, owner, pack, ping, prefix, profile, prune,
+    publish, rb, rebuild, repo, restart, root, run, run-script,
+    s, se, search, set, shrinkwrap, star, stars, start, stop, t,
+    team, test, token, tst, un, uninstall, unpublish, unstar,
+    up, update, v, version, view, whoami
+
+npm <command> -h     quick help on <command>
+npm -l           display full usage info
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    /Users/dmiller/.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@5.8.0 /usr/local/lib/node_modules/npm
+
+Did you mean one of these?
+    stars
+    star
+    start
+davids-mbp:react-native-app-2 dmiller$ brew update
+Updated 1 tap (homebrew/core).
+==> New Formulae
+angle-grinder        gitlab-gem           netdata              phplint
+deark                mkl-dnn              patchelf
+==> Updated Formulae
+sqlite ✔                    globus-toolkit              osrm-backend
+abcmidi                     glslang                     packetbeat
+abyss                       gmt                         packmol
+afsctool                    gmt@4                       paket
+akamai                      gnupg                       pam-u2f
+amazon-ecs-cli              gnuradio                    pam_yubico
+amqp-cpp                    go-jira                     pcl
+annie                       gollum                      pcre2
+ansible                     gpgme                       pdal
+apache-arrow                gphoto2                     pdftoedn
+apache-drill                gr-osmosdr                  pdftoipe
+apibuilder-cli              gradle                      percona-server-mongodb
+apm-server                  grails                      percona-toolkit
+arangodb                    grpc                        perl@5.18
+armadillo                   gtk+3                       pgpool-ii
+armor                       hadolint                    php
+artifactory                 haproxy                     php@5.6
+asio                        hcloud                      php@7.0
+aspectj                     hdf5                        php@7.1
+atlassian-cli               heartbeat                   phpunit
+auditbeat                   heroku                      pick
+aws-shell                   hlint                       pioneers
+babeld                      htmldoc                     pipenv
+babl                        hugo                        planck
+bacula-fd                   i2p                         poco
+bartycrouch                 imlib2                      poppler
+bazel                       influxdb                    povray
+bdw-gc                      jansson                     pqiv
+bibtex2html                 jbake                       presto
+binaryen                    jenkins                     proguard
+bit                         jenkins-job-builder         pstoedit
+bitcoin                     jenkins-lts                 py2cairo
+blueutil                    jhipster                    py3cairo
+boost                       jpegoptim                   pyexiv2
+boost-bcp                   json-fortran                qd
+boost-build                 juju                        qmmp
+boost-mpi                   kallisto                    qscintilla2
+boost-python                kedge                       qtfaststart
+boost-python3               keychain                    quantlib
+botan                       kibana                      rancher-cli
+brotli                      knot                        recoverjpeg
+caddy                       kompose                     remctl
+caffe                       kops                        rhash
+cake                        kotlin                      scala@2.11
+calicoctl                   kubeless                    scm-manager
+camlp5                      kubernetes-cli              scw
+chakra                      launch                      sdb
+chronograf                  lcdf-typetools              sdcc
+cimg                        ledger                      sfk
+clac                        lgogdownloader              shml
+clamav                      libbi                       shogun
+cliclick                    libbitcoin                  silk
+clojure                     libgpg-error                singular
+cmake                       libgphoto2                  skaffold
+cockatrice                  libgsf                      skafos
+composer                    libhttpseverywhere          softhsm
+conan                       liblwgeom                   sonarqube
+consul                      libmagic                    sops
+container-diff              libmatio                    source-highlight
+convox                      libphonenumber              sourcery
+coreos-ct                   libqalculate                sparse
+cython                      libre                       spotbugs
+dartsim                     librealsense                sqldiff
+davmail                     libsoxr                     sqlite-analyzer
+dbhash                      libstfl                     sqliteodbc
+di                          libtiff                     sratoolkit
+diamond                     libtorrent-rasterbar        src
+diff-pdf                    libuv                       subversion
+discount                    libzip                      svgcleaner
+dmd                         links                       swift
+dnscrypt-proxy              lmod                        swiftformat
+dnsdist                     log4cplus                   telegraf
+docker                      logstash                    terraform
+docker-completion           lolcat                      testssl
+docker-compose              macvim                      tile38
+docker-compose-completion   mapnik                      timelimit
+docker2aci                  maxwell                     tippecanoe
+dockviz                     metabase                    tmux
+dub                         metaproxy                   tmuxinator-completion
+duti                        metricbeat                  trafficserver
+dynare                      mgba                        tup
+elasticsearch               mikutter                    txr
+elasticsearch@2.4           mill                        typescript
+elasticsearch@5.6           mint                        uhd
+embulk                      mkvtoolnix                  upscaledb
+emscripten                  modd                        vagrant-completion
+erlang                      monero                      vala
+etsh                        mongo-orchestration         vim
+feh                         mongodb                     vtk
+fibjs                       mutt                        webp
+field3d                     mypy                        webpack
+fig2dev                     mysql                       wesnoth
+file-formula                mysql-sandbox               widelands
+filebeat                    mysql@5.5                   wildfly-as
+fio                         mysql@5.6                   wireguard-tools
+firebase-cli                nanopb-generator            wla-dx
+fits                        ncmpcpp                     wp-cli
+flann                       nco                         wpcli-completion
+flow                        ncview                      xmrig
+fluent-bit                  netcdf                      xonsh
+fn                          nghttp2                     xrootd
+fobis                       nginx                       xtensor
+folly                       node-build                  xxhash
+freeling                    nomad                       yarn
+freeradius-server           nss                         yash
+freetds                     nudoku                      yaws
+fuego                       nvm                         ykman
+futhark                     ocrmypdf                    yle-dl
+gegl                        octave                      you-get
+ghc                         oniguruma                   youtube-dl
+gifski                      openfortivpn                znapzend
+gist                        openimageio                 zsh
+git-sizer                   openvdb
+gjs                         osquery
+==> Renamed Formulae
+geth -> ethereum
+==> Deleted Formulae
+monotone
+davids-mbp:react-native-app-2 dmiller$ brew upgrade node
+Error: node 9.11.1 already installed
+davids-mbp:react-native-app-2 dmiller$ sudo npm install -g create-react-native-app
+/usr/local/bin/create-react-native-app -> /usr/local/lib/node_modules/create-react-native-app/build/index.js
+davids-mbp:react-native-app-2 dmiller$ sudo npm install -g create-react-native-app my-first-app
+npm ERR! code ENOVERSIONS
+npm ERR! No valid versions available for my-first-app
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/dmiller/.npm/_logs/2018-04-21T21_11_40_324Z-debug.log
+davids-mbp:react-native-app-2 dmiller$ create-react-native-app my-first-app
+Creating a new React Native app in /Users/dmiller/Google Drive/School/Udemy_ReactNative/react-native-app-2/my-first-app.
+
+Using package manager as npm with npm interface.
+Installing packages. This might take a couple minutes.
+Installing react-native-scripts...
+
+npm WARN deprecated socks@1.1.10: If using 2.x branch, please upgrade to at least 2.1.6 to avoid a serious bug with socket data flow and an import issue introduced in 2.1.0
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-freebsd-ia32@2.2.8 (node_modules/@expo/ngrok-bin-freebsd-ia32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-freebsd-ia32@2.2.8: wanted {"os":"freebsd","arch":"ia32"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-linux-arm@2.2.8 (node_modules/@expo/ngrok-bin-linux-arm):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-linux-arm@2.2.8: wanted {"os":"linux","arch":"arm"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-freebsd-x64@2.2.8 (node_modules/@expo/ngrok-bin-freebsd-x64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-freebsd-x64@2.2.8: wanted {"os":"freebsd","arch":"x64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-darwin-ia32@2.2.8 (node_modules/@expo/ngrok-bin-darwin-ia32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-darwin-ia32@2.2.8: wanted {"os":"darwin","arch":"ia32"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-linux-arm64@2.2.8 (node_modules/@expo/ngrok-bin-linux-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-linux-arm64@2.2.8: wanted {"os":"linux","arch":"arm64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-sunos-x64@2.2.8 (node_modules/@expo/ngrok-bin-sunos-x64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-sunos-x64@2.2.8: wanted {"os":"sunos","arch":"x64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-linux-x64@2.2.8 (node_modules/@expo/ngrok-bin-linux-x64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-linux-x64@2.2.8: wanted {"os":"linux","arch":"x64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-linux-ia32@2.2.8 (node_modules/@expo/ngrok-bin-linux-ia32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-linux-ia32@2.2.8: wanted {"os":"linux","arch":"ia32"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-win32-x64@2.2.8-beta.1 (node_modules/@expo/ngrok-bin-win32-x64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-win32-x64@2.2.8-beta.1: wanted {"os":"win32","arch":"x64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-win32-ia32@2.2.8-beta.1 (node_modules/@expo/ngrok-bin-win32-ia32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-win32-ia32@2.2.8-beta.1: wanted {"os":"win32","arch":"ia32"} (current: {"os":"darwin","arch":"x64"})
+
++ react-native-scripts@1.13.2
+added 447 packages from 461 contributors in 55.924s
+Installing dependencies using npm...
+
+
+> fsevents@1.2.0 install /Users/dmiller/Google Drive/School/Udemy_ReactNative/react-native-app-2/my-first-app/node_modules/fsevents
+> node install
+
+[fsevents] Success: "/Users/dmiller/Google Drive/School/Udemy_ReactNative/react-native-app-2/my-first-app/node_modules/fsevents/lib/binding/Release/node-v48-darwin-x64/fse.node" already installed
+Pass --update-binary to reinstall or --build-from-source to recompile
+npm WARN fsevents@1.2.0 had bundled packages that do not match the required version(s). They have been replaced with non-bundled versions.
+npm WARN @babel/plugin-check-constants@7.0.0-beta.38 requires a peer of @babel/core@7.0.0-beta.38 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-win32-x64@2.2.8-beta.1 (node_modules/@expo/ngrok-bin-win32-x64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-win32-x64@2.2.8-beta.1: wanted {"os":"win32","arch":"x64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-win32-ia32@2.2.8-beta.1 (node_modules/@expo/ngrok-bin-win32-ia32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-win32-ia32@2.2.8-beta.1: wanted {"os":"win32","arch":"ia32"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-linux-x64@2.2.8 (node_modules/@expo/ngrok-bin-linux-x64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-linux-x64@2.2.8: wanted {"os":"linux","arch":"x64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-linux-arm64@2.2.8 (node_modules/@expo/ngrok-bin-linux-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-linux-arm64@2.2.8: wanted {"os":"linux","arch":"arm64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-linux-ia32@2.2.8 (node_modules/@expo/ngrok-bin-linux-ia32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-linux-ia32@2.2.8: wanted {"os":"linux","arch":"ia32"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-linux-arm@2.2.8 (node_modules/@expo/ngrok-bin-linux-arm):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-linux-arm@2.2.8: wanted {"os":"linux","arch":"arm"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-sunos-x64@2.2.8 (node_modules/@expo/ngrok-bin-sunos-x64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-sunos-x64@2.2.8: wanted {"os":"sunos","arch":"x64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-freebsd-x64@2.2.8 (node_modules/@expo/ngrok-bin-freebsd-x64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-freebsd-x64@2.2.8: wanted {"os":"freebsd","arch":"x64"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-freebsd-ia32@2.2.8 (node_modules/@expo/ngrok-bin-freebsd-ia32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-freebsd-ia32@2.2.8: wanted {"os":"freebsd","arch":"ia32"} (current: {"os":"darwin","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @expo/ngrok-bin-darwin-ia32@2.2.8 (node_modules/@expo/ngrok-bin-darwin-ia32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @expo/ngrok-bin-darwin-ia32@2.2.8: wanted {"os":"darwin","arch":"ia32"} (current: {"os":"darwin","arch":"x64"})
+
+added 939 packages from 433 contributors and updated 1 package in 84.922s
+
+Success! Created my-first-app at /Users/dmiller/Google Drive/School/Udemy_ReactNative/react-native-app-2/my-first-app
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server so you can open your app in the Expo
+    app on your phone.
+
+  npm run ios
+    (Mac only, requires Xcode)
+    Starts the development server and loads your app in an iOS simulator.
+
+  npm run android
+    (Requires Android build tools)
+    Starts the development server and loads your app on a connected Android
+    device or emulator.
+  
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+
+We suggest that you begin by typing:
+
+  cd my-first-app
+  npm start
+
+Happy hacking!
+davids-mbp:react-native-app-2 dmiller$ ls
+README.md	my-first-app
+davids-mbp:react-native-app-2 dmiller$ cd my-first-app/
+davids-mbp:my-first-app dmiller$ npm start
+
+> my-first-app@0.1.0 start /Users/dmiller/Google Drive/School/Udemy_ReactNative/react-native-app-2/my-first-app
+> react-native-scripts start
+
+5:15:47 PM: Starting packager...
+Packager started!
+
+
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+
+Your app is now running at URL: exp://192.168.86.93:19000
+
+View your app with live reloading:
+
+  Android device:
+    -> Point the Expo app to the QR code above.
+       (You'll find the QR scanner on the Projects tab of the app.)
+  iOS device:
+    -> Press s to email/text the app URL to your phone.
+  Emulator:
+    -> Press a (Android) or i (iOS) to start an emulator.
+
+Your phone will need to be on the same local network as this computer.
+For links to install the Expo app, please visit https://expo.io.
+
+Logs from serving your app will appear here. Press Ctrl+C at any time to stop.
+
+ › Press a to open Android device or emulator, or i to open iOS emulator.
+ › Press s to send the app URL to your phone number or email address
+ › Press q to display QR code.
+ › Press r to restart packager, or R to restart packager and clear cache.
+ › Press d to toggle development mode. (current mode: development)
+
+5:20:14 PM: Finished building JavaScript bundle in 134903ms
+5:20:19 PM: Running app on iPhone in development mode
+
+5:28:16 PM: Finished building JavaScript bundle in 442ms
+5:28:16 PM: Running app on iPhone in development mode
+
+
